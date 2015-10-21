@@ -9,7 +9,7 @@
     
     <meta name="author" content="jayuu">
     
-    <meta name="description" content="学习总结 感悟随想 网络文摘">
+    <meta name="description" content="404">
     
     
     
@@ -60,52 +60,74 @@
 
     </header>
     <div id="container">
-      <div id="main">
-
-  <section class="default" itemscope itemprop="blogPost">
-  
-    <a href="/2015/10/21/404/" title="" itemprop="url">
-  
-    <h1 itemprop="name"></h1>
+      <div id="main" class="default" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-     
-           <p itemprop="description" >404</p>
-        
+      <a href="/2015/10/21/404/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
     
+      <a href="http://yoursite.com" title="jayuu">jayuu</a>
+    </p>
+  <p class="article-time">
     <time datetime="2015-10-21T09:25:12.284Z" itemprop="datePublished">2015-10-21</time>
-  </a>
-</section>
+    更新日期:<time datetime="2015-10-21T09:25:12.284Z" itemprop="dateModified">2015-10-21</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+		</div>
+		
+		<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>404</title>                                                                                                                                        
+    </head>
+    <body>
+         <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8"></script>
+    </body>
+</html>  
+	</div>
+		<footer class="article-footer clearfix">
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2015/10/21/test-post/" title="惊叹号" itemprop="url">
-  
-    <h1 itemprop="name">惊叹号</h1>
-    
-     
-           <p itemprop="description" >来来来，测试一把，这是markdown格式什么的不会用，现在看起来格式估计乱七八糟的，没关系，只是用来看一看了</p>
-        
-    
-    <time datetime="2015-10-21T07:48:25.000Z" itemprop="datePublished">2015-10-21</time>
-  </a>
-</section>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2015/10/21/hello-world/" title="Hello World" itemprop="url">
-  
-    <h1 itemprop="name">Hello World</h1>
-    
-     
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
-        
-    
-    <time datetime="2015-10-21T07:43:37.770Z" itemprop="datePublished">2015-10-21</time>
-  </a>
-</section>
 
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/2015/10/21/404/" data-title="遗漏的时光" data-tsina="null" class="share clearfix">
+  </div>
 
 </div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/10/21/test-post/"  title="惊叹号">
+ <strong>NEXT:</strong><br/> 
+ <span>惊叹号
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
 <div id="asidepart">
@@ -172,6 +194,8 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
@@ -188,6 +212,38 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
 });
 </script>
 
